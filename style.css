@@ -119,7 +119,7 @@ margin-top: 5px;
 .rs-lab-cont {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: stretch;
   padding: 10px;
   align-content: center;
@@ -142,7 +142,9 @@ i think we can modify this code to add those lines on the page*/
   color: orange;
 }
 
-
+#spotlight-reports .image-container {
+  margin: auto;
+}
 
 
 
