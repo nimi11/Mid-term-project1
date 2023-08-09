@@ -4,7 +4,7 @@
 body{
   color: black;
   margin:10px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 
 }
 a{
@@ -15,31 +15,34 @@ a{
 h1 {
   font-family: "Moderat", sans-serif;
 }
+.rubric{
+  color:orange
+}
 .masthead-categories-links{
   display:flex;
   justify-content: flex-end;
   flex-direction: row;
   list-style: none;
   gap:20px;
-  margin:50px;
-  top:19px;
+  margin:20px;
+margin-top: 5px;
   margin-left: 300px;
   font-family: SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace;
-  right: 0px;
-  position: absolute;
+  margin-right: 0px;
+  position: relative;
 }
 .masthead-categories-links a:hover{
   color:orange;
 }
 .masthead-branding-logo{
-  position:absolute;
+  position:relative;
   font-size:18px
   
   
 }
 .masthead-branding-tagline{
   font-size:8px;
-  position: absolute;
+  position: relative;
   margin-top:40px;
   left:35px;
   font-size:25px;
@@ -47,91 +50,101 @@ h1 {
   
 }
 
-#first_img{
-margin-left:50%;
-  width: 850px;
-  height:auto;
-  display:inline-block;
-  margin-top: 50px;
-  padding:15px;
-
-
-}
 #line1 {
-  position: absolute;
-  width: calc(70% - 20px); /*Adjust this value to control line length */
+ width: calc(80% - 3px); /*Adjust this value to control line length */
  height: 0.3px;
   background-color: antiquewhite;
-  left: 50%;
-  transform: translateX(-29%);
-  top: 10%;
+  left: 100%;
+  transform: translateX(35%);
+  margin-top: 3px;
+  
+
 }
 #line2{
-  position: absolute;
-  width: calc(70% - 20px); /*Adjust this value to control line length */
+  width: calc(80% - 3px); /*Adjust this value to control line length */
  height: 0.3px;
   background-color: antiquewhite;
-  left: 50%;
-  transform: translateX(-29%);
+  left: 100%;
+  transform: translateX(35%);
   top: 15%; 
-  font-size: 9px;
+ 
+  margin: 10px;
 }
-.bs-rubric{
-  position: absolute;
-  top:190px;
-  color:orange;
-  font-size: 20px;
-  font-family:"Input Mono",SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace ;
+#big-story.bs {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse; /* Reverse the flex direction */
 }
-.bs-story{
-  max-width:20% ;
+#big-story .bs-story {
+  flex: 1;
+  padding-left: 20px; /* Adjust padding to create spacing between text and image */
 }
+#big-story .bs-img {
 
-.bs-hed{ 
-  font-family:sans-serif;
-  position: absolute;
-  top:250px;
-  display: block;
-  max-width: 30%;
-  font-size: 30px;
 }
-.bs-dek{
-  position:absolute;
-  top:4px;
-  max-width:20%;
-  top:440px;
-  margin-bottom: 0;
-}
-#first_author{
-  font-family:serif ;
+.big-story > article:first-of-type:hover .bs-hed,
+.big-story > article:first-of-type:hover .bs-dek,
+.big-story > article:first-of-type:hover .author,
+.big-story > article:first-of-type:hover .byline {
   color: orange;
-  text-transform: capitalize;
-  position: relative;
-  bottom: 60px;
+  text-decoration: none;
 }
-
-#big-story:hover .bs-hed{
-  color:orange;
-}
-#big-story:hover .bs-dek{
-  color:orange;
-}
-
-#big-story:hover .author  { 
+.bs-rubric:first-of-type{
   color: orange;
-  text-decoration: underline;
-  border: ;
-  
+  font-size: 25px;
 }
-#big-story:hover .byline {
-  color: orange;
-  
-}
-.byline{
+.bs-hed:first-of-type{
+  font-size: 38px;
   font-family: sans-serif;
-  position: relative;
-  top: -10;
 }
+.bs-dek:first-of-type{
+  font-size: 20px;
+}
+#line4{
+  top: 100%; /* Position it at the bottom of #big-story .bs */
+  margin-top: 20px; /* Adjust the margin as needed */
+  background-color: orange; /* Change the color */
+}
+
+#big-story-related {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  border-bottom:  1px solid black;
+  border-top: 1px solid black;
+}
+
+.rs-cont,
+.rs-lab-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+  align-content: center;
+  
+}
+/*#big-story-related::before,
+.rs-cont:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 50%; /* Position the line halfway vertically 
+  transform: translateY(-50%); /* Center the line vertically 
+  z-index: -1; /* Place the lines behind the content 
+}
+i think we can modify this code to add those lines on the page*/
+
+.rs-cont:hover *{
+  color: orange;
+}
+
+
+
+
 
 
 
