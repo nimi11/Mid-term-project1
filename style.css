@@ -1,0 +1,148 @@
+/* Add your styles here. Take it piece by piece! */
+
+
+body{
+  color: black;
+  margin:10px;
+  overflow-x: hidden;
+
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+h1 {
+  font-family: "Moderat", sans-serif;
+}
+.masthead-categories-links{
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style: none;
+  gap:20px;
+  margin:50px;
+  top:19px;
+  margin-left: 300px;
+  font-family: SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace;
+  right: 0px;
+  position: absolute;
+}
+.masthead-categories-links a:hover{
+  color:orange;
+}
+.masthead-branding-logo{
+  position:absolute;
+  font-size:18px
+  
+  
+}
+.masthead-branding-tagline{
+  font-size:8px;
+  position: absolute;
+  margin-top:40px;
+  left:35px;
+  font-size:25px;
+
+  
+}
+
+#first_img{
+margin-left:50%;
+  width: 850px;
+  height:auto;
+  display:inline-block;
+  margin-top: 50px;
+  padding:15px;
+
+
+}
+#line1 {
+  position: absolute;
+  width: calc(70% - 20px); /*Adjust this value to control line length */
+ height: 0.3px;
+  background-color: antiquewhite;
+  left: 50%;
+  transform: translateX(-29%);
+  top: 10%;
+}
+#line2{
+  position: absolute;
+  width: calc(70% - 20px); /*Adjust this value to control line length */
+ height: 0.3px;
+  background-color: antiquewhite;
+  left: 50%;
+  transform: translateX(-29%);
+  top: 15%; 
+  font-size: 9px;
+}
+.bs-rubric{
+  position: absolute;
+  top:190px;
+  color:orange;
+  font-size: 20px;
+  font-family:"Input Mono",SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace ;
+}
+.bs-story{
+  max-width:20% ;
+}
+
+.bs-hed{ 
+  font-family:sans-serif;
+  position: absolute;
+  top:250px;
+  display: block;
+  max-width: 30%;
+  font-size: 30px;
+}
+.bs-dek{
+  position:absolute;
+  top:4px;
+  max-width:20%;
+  top:440px;
+  margin-bottom: 0;
+}
+#first_author{
+  font-family:serif ;
+  color: orange;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 60px;
+}
+
+#big-story:hover .bs-hed{
+  color:orange;
+}
+#big-story:hover .bs-dek{
+  color:orange;
+}
+
+#big-story:hover .author  { 
+  color: orange;
+  text-decoration: underline;
+  border: ;
+  
+}
+#big-story:hover .byline {
+  color: orange;
+  
+}
+.byline{
+  font-family: sans-serif;
+  position: relative;
+  top: -10;
+}
+
+
+
+
+
+
+/* These styles are for the disclaimer -- leave them alone */
+
+.disclaimer {
+  margin: 1em;
+  padding: 4px;
+  border: 1px solid hotpink;
+}
+
