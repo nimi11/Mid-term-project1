@@ -123,8 +123,13 @@ margin-top: 5px;
   align-items: stretch;
   padding: 10px;
   align-content: center;
-  
+  border-left: none;
 }
+.rs-cont:not(:first-child),
+.rs-lab-cont:not(:first-child) {
+  border-left: 1px solid;
+}
+
 /*#big-story-related::before,
 .rs-cont:not(:first-child)::before {
   content: '';
@@ -142,10 +147,83 @@ i think we can modify this code to add those lines on the page*/
   color: orange;
 }
 
-#spotlight-reports .image-container {
-  margin: auto;
+
+.block.spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  padding: 10px;
+  margin: 10px;
 }
 
+.spotlight-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.spotlight-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+}
+
+
+.spotlight-story {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.spotlight-story-image-wrapper {
+
+  text-decoration: none;
+}
+
+
+.spotlight-story .image-container img {
+  max-width: 80%; 
+  height: auto; 
+  overflow: hidden;
+}
+
+.spotlight-story-headline {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.spotlight-story-dek {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.spotlight-story-author {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+footer{
+  background-color: orange;
+  margin-top: 95px;
+}
+ul#menu-footer-links{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+}
+.menu-item a{
+  color: white;
+  font-family: SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace
+}
+div.footer-copyright{
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
 
 
 
