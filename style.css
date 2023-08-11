@@ -206,22 +206,25 @@ i think we can modify this code to add those lines on the page*/
 }
 
 footer{
-  background-color: orange;
+  background-color: rgb(255, 81, 0);
   margin-top: 95px;
+  height: 160px;
 }
 ul#menu-footer-links{
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
+  align-content: flex-end;
+  height: auto;
+  margin-top: 60px;
 }
 .menu-item a{
   color: white;
   font-family: SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace
 }
 div.footer-copyright{
-  margin-left: auto;
-  margin-right: auto;
+ text-align: center;
   color: white;
 }
 
